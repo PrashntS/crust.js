@@ -7,6 +7,13 @@ namespace Crust\Server;
  * @version 0.1 20140925
  */
 
-function Routes() {
-	// todo
+$URI = preg_split('/[\/\?]/', preg_replace("/[\/]+/", "/", $_SERVER['REQUEST_URI']));
+
+const BASE = 2;
+
+switch(strtolower(isset($URI[BASE]) ? $URI[BASE] : False)) {
+	case 'api':
+		break;
+	default:
+		break;
 }
