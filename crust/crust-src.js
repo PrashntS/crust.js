@@ -6,5 +6,8 @@
  */
 
 var Crust = {
-	// todo
-}
+	
+};
+
+var CrustData = [];
+
